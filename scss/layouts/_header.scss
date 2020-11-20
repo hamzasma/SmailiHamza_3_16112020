@@ -1,0 +1,11 @@
+header {
+  padding-top: 10px;
+  text-align: center;
+  &:not(.header-index) {
+    max-height: 320px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

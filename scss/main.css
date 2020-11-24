@@ -6,6 +6,13 @@ h1 {
   font-family: "Shrikhand";
 }
 
+h2 {
+  font-size: 16px;
+  font-weight: 100;
+  color: #2c2c2c;
+  margin: 25px 6% 20px;
+}
+
 h2.brand {
   font-size: 27px;
   font-weight: 500;
@@ -28,6 +35,20 @@ h2.footer {
   padding: 0px;
 }
 
+h2.plat-type__title {
+  position: relative;
+}
+
+h2.plat-type__title::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  display: block;
+  height: 3px;
+  background-color: #99e2d0;
+  bottom: -5px;
+}
+
 h2.index {
   font-size: 24px;
   font-weight: 900;
@@ -38,6 +59,13 @@ h2.index {
 h2.index.index-section {
   margin: 20px 20px;
   padding-top: 50px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin: 15px 0px 0px;
 }
 
 h3.index {
@@ -59,9 +87,34 @@ footer {
   color: white;
 }
 
+.plat-desc {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #2c2c2c;
+  margin: 2px -50px 10px 0px;
+}
+
+.plat-box h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 85%;
+}
+
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btn:hover {
@@ -80,12 +133,109 @@ a {
   font-weight: 500;
   color: white;
   margin: 0px 0px 50px;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
 }
 
 .btn--order {
   display: block;
   margin: 40px auto 70px;
   padding: 15px 50px;
+}
+
+.fas.back {
+  position: absolute;
+  color: #2c2c2c;
+  margin-right: 90%;
+  padding: 17px;
+}
+
+.fas.mapmarker {
+  color: #2c2c2c;
+  margin-right: 15px;
+}
+
+.fas.fa-check {
+  background-color: white;
+  margin: 35%;
+  border-radius: 50%;
+  color: #99e2d0;
+  padding: 3px;
+}
+
+.fas-title .fas:not(.hidden) {
+  margin-top: -35px;
+  position: absolute;
+  margin-left: 85%;
+  font-size: 24px;
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+}
+
+.fas-title .fas:not(.hidden):hover {
+  opacity: 0;
+}
+
+.fas-title .fas.hidden {
+  margin-top: -36px;
+  position: absolute;
+  margin-left: 85%;
+  opacity: 0;
+  font-size: 26px;
+  -webkit-text-stroke: 1px white;
+  background: linear-gradient(210deg, #9356dc, #9356dc, #9356dc, orange, orange) right;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 0%;
+}
+
+.fas-title .fas.hidden:hover {
+  opacity: 1;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+li {
+  padding-top: 10px;
+}
+
+.check-appear {
+  display: none;
+  background-color: #99e2d0;
+}
+
+.dish-box:hover .check-appear {
+  display: block;
+  position: relative;
+  height: 100px;
+  margin-top: -100px;
+  margin-left: 90%;
+  width: 100px;
+}
+
+.dish-box:hover .price {
+  margin-right: 20%;
+}
+
+.dish-box:hover .fa-check {
+  margin: 55% 25px;
+}
+
+.dish-box:hover h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 65%;
+}
+
+.price {
+  margin-right: 0px;
 }
 
 html {
@@ -103,6 +253,44 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.plat-box {
+  padding: 0px 30px 0px 10px;
+  margin: 15px;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.main-section {
+  margin-top: -30px;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.plat-type {
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.plat-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
 }
 
 .footer {
@@ -357,4 +545,6 @@ span {
   font-size: 14px;
   font-weight: bold;
 }
+
+
 /*# sourceMappingURL=main.css.map */

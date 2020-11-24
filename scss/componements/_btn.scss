@@ -9,6 +9,7 @@
   background: linear-gradient(rgb(234, 114, 218), $primary-color);
   border-style: hidden;
   @include font-palette(btn);
+  box-shadow: $box-shadow;
   }
 .btn--order {
   display: block;

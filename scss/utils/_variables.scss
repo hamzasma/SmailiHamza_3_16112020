@@ -27,6 +27,24 @@ $font-palette: (
     margin: 5px,
     family: 'Shrikhand',
   ),
+  plat-type: (
+    size: 16px,
+    weight: 100,
+    color: $footer-bg,
+    margin: 25px 6% 20px,
+  ),
+  plat-name: (
+    size: 18px,
+    weight: 600,
+    color: black,
+    margin: 15px 0px 0px,
+  ),
+  plat-sub: (
+    size: 15px,
+    weight: 300,
+    color: $footer-bg,
+    margin: 2px -50px 10px 0px,
+  ),
   footer: (
     size: 15px,
     weight: 200,

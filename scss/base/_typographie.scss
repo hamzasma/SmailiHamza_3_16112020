@@ -2,7 +2,7 @@ h1 {
   @include font-palette(brand);
 }
 h2 {
-  
+  @include font-palette(plat-type);
   &.brand {
     @include font-palette(brand);
     margin: 30px 6% 0px;
@@ -15,7 +15,18 @@ h2 {
     margin: 0px;
     padding: 0px;
   }
-  
+  &.plat-type__title {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      display: block;
+      height: 3px;
+      background-color: $tertiary-color;
+      bottom: -5px;
+    }
+  }
   &.index {
     @include font-palette(section-title);
     &.index-section {
@@ -25,6 +36,7 @@ h2 {
   }
 }
 h3 {
+  @include font-palette(plat-name);
   &.index {
     @include font-palette(restaurant-name);
   }
@@ -36,4 +48,15 @@ footer {
   @include font-palette(footer);
   color: white;
 }
-
+.plat-desc {
+  font-weight: bold;
+}
+h4 {
+  @include font-palette(plat-sub);
+}
+.plat-box h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 85%;
+}

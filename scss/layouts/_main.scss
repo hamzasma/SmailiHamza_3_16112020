@@ -8,4 +8,28 @@ body {
   display: flex;
   flex-direction: column;
 }
+.plat-box {
+  @include box-layout;
+  background-color: $box-bg;
+  border-radius: $box-radius;
+  overflow: hidden;
+}
 
+.main-section {
+  margin-top: -30px;
+  background-color: $section-bg;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.plat-type {
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.plat-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}

@@ -105,7 +105,6 @@ h4 {
   max-width: 85%;
 }
 
-
 a {
   text-decoration: none;
   color: inherit;
@@ -118,16 +117,16 @@ header a {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ed88e0), to(#a16be0));
-  background: linear-gradient(#ed88e0, #a16be0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ec87dd), to(#a16be0));
+  background: linear-gradient(#ec87dd, #a16be0);
 }
 
 .btn {
   border-radius: 30px 30px 30px 30px;
   padding: 15px 20px;
   margin-bottom: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ea72da), to(#9356dc));
-  background: linear-gradient(#ea72da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e971d7), to(#9356dc));
+  background: linear-gradient(#e971d7, #9356dc);
   border-style: hidden;
   font-size: 16px;
   font-weight: 500;
@@ -210,7 +209,7 @@ li {
   background-color: #99e2d0;
 }
 
-.dish-box:hover .check-appear {
+.plat-box:hover .check-appear {
   display: block;
   position: relative;
   height: 100px;
@@ -219,15 +218,15 @@ li {
   width: 100px;
 }
 
-.dish-box:hover .price {
+.plat-box:hover .price {
   margin-right: 20%;
 }
 
-.dish-box:hover .fa-check {
+.plat-box:hover .fa-check {
   margin: 55% 25px;
 }
 
-.dish-box:hover h4 {
+.plat-box:hover h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -328,6 +327,8 @@ figure {
   min-width: 96%;
   height: 250px;
   background-color: white;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
   border-radius: 20px 20px 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,6 +363,7 @@ figure .fas.hidden {
   -webkit-text-stroke: 1px white;
   background: linear-gradient(210deg, #9356dc, #9356dc, #9356dc, orange, orange) right;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 0%;
 }
@@ -546,5 +548,113 @@ span {
   font-weight: bold;
 }
 
+@media screen and (min-width: 760px) {
+  .index-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .index-section-restaurants a {
+    width: 44%;
+  }
+  .flag-new {
+    margin-left: 29%;
+  }
+  figure .fas:not(.hidden) {
+    margin-left: 35%;
+  }
+  figure .fas.hidden {
+    margin-left: 35%;
+  }
+  .index-fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .index-box {
+    margin: 12px 3%;
+    width: 25%;
+  }
+}
 
+@media screen and (min-width: 845px) {
+  .fas-title .fas:not(.hidden) {
+    margin-left: 90%;
+  }
+  .fas-title .fas.hidden {
+    margin-left: 90%;
+  }
+  .plat-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  h2.plat-type__title {
+    width: 29px;
+  }
+  .plat-box {
+    padding: 0px;
+    width: 30%;
+    height: 176px;
+  }
+  .plat-box h3 {
+    height: 50px;
+    margin-left: 10px;
+  }
+  .plat-desc {
+    height: 96px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+  }
+  .plat-box h4 {
+    max-width: 90%;
+    white-space: unset;
+  }
+  .check-appear {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .plat-box:hover .plat-desc {
+    height: 56px;
+  }
+  .plat-box:hover .check-appear {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .plat-box:hover .price {
+    margin-right: 20%;
+  }
+  .plat-box:hover .fa-check {
+    margin: 0px;
+    margin-left: 46%;
+    margin-top: 17px;
+    margin-bottom: 20px;
+  }
+  .plat-box:hover h4 {
+    white-space: nowrap;
+  }
+}
 /*# sourceMappingURL=main.css.map */

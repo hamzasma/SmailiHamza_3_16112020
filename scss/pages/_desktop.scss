@@ -1,0 +1,90 @@
+@media screen and (min-width: 760px) {
+  .index-restaurants {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.index-section-restaurants a {
+  width: 44%;
+}
+.flag-new {
+  margin-left: 29%;
+}
+figure .fas:not(.hidden) {
+  margin-left: 35%;
+}
+figure .fas.hidden {
+  margin-left: 35%;
+}
+.index-fonctionnement {
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.index-box{
+  margin: 12px 3%;
+  width: 25%;
+}
+}
+@media screen and (min-width: 845px){
+  .fas-title .fas:not(.hidden) {
+    margin-left: 90%;
+  }
+  .fas-title .fas.hidden {
+    margin-left: 90%;
+  }
+  .plat-type {
+    display: flex;
+    flex-direction: row;
+}
+h2.plat-type__title {
+  width: 29px;
+}
+.plat-box {
+  padding: 0px;
+  width: 30%;
+  height: 176px;
+}
+.plat-box h3 {
+  height: 50px;
+  margin-left: 10px;
+}
+.plat-desc {
+  height: 96px;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.plat-box h4 {
+  max-width: 90%;
+  white-space: unset;
+}
+.check-appear {
+  width: 100%;
+  margin-left: 0px;
+}
+.plat-box:hover {
+  & .plat-desc{
+    height: 56px;
+  }
+  & .check-appear {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  & .price{
+    margin-right: 20%;
+  }
+  & .fa-check{
+    margin: 0px;
+      margin-left: 46%;
+      margin-top: 17px;
+      margin-bottom: 20px;
+  }
+  & h4 {
+    white-space: nowrap;
+  }
+}
+}

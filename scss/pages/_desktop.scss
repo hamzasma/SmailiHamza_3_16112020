@@ -10,13 +10,13 @@
   width: 44%;
 }
 .flag-new {
-  margin-left: 29%;
+  margin-left: 32%;
 }
 figure .fas:not(.hidden) {
-  margin-left: 35%;
+  margin-left: 37%;
 }
 figure .fas.hidden {
-  margin-left: 35%;
+  margin-left: 37%;
 }
 .index-fonctionnement {
  
@@ -30,12 +30,13 @@ figure .fas.hidden {
 }
 }
 @media screen and (min-width: 845px){
-  .fas-title .fas:not(.hidden) {
-    margin-left: 90%;
+  .progress{
+    opacity: 0;
   }
-  .fas-title .fas.hidden {
-    margin-left: 90%;
+  .displayed{
+    opacity: 1;
   }
+  
   .plat-type {
     display: flex;
     flex-direction: row;
@@ -87,4 +88,21 @@ h2.plat-type__title {
     white-space: nowrap;
   }
 }
+}
+@media screen and(min-width :1280px){
+  
+  body{
+    margin: auto;
+    width: 1280px;
+  }
+  .flag-new {
+    margin-left: 425px;
+  }
+  figure .fas:not(.hidden) {
+    margin-left: 470px;
+  }
+  figure .fas.hidden {
+    margin-left: 470px;
+  }
+  
 }

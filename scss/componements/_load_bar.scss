@@ -1,0 +1,27 @@
+.progress {
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: absolute;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin-top: 50%;
+    margin-left: 5%;
+    animation: invisible 1.5s 1.5s normal forwards;
+  }
+  
+  .progress-value {
+    animation: load 1.5s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 13px;
+    background: linear-gradient(to right, rgb(24, 38, 235) 20%, rgb(236,   15, 181) 40%, rgb(236, 15, 181) 60%, rgb(92, 14, 236) 80%);
+    height: 30px;
+    width: 0;
+  }
+  .displayed{
+      opacity: 0;
+      animation: displayed 0s 3s normal forwards;
+  }

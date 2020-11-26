@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import"./utils/animations";
 @import "./base/typographie";
 @import "./componements/a";
 @import "./componements/btn";
@@ -7,6 +8,7 @@
 @import "./componements/table";
 @import "./componements/check_appear";
 @import "./componements/price";
+@import"./componements/load_bar";
 @import "./layouts/main";
 @import "./layouts/footer";
 @import "./layouts/header";

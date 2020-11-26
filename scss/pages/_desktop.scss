@@ -30,41 +30,34 @@ figure .fas.hidden {
 }
 }
 @media screen and (min-width: 845px){
-  .progress{
-    opacity: 0;
-  }
-  .displayed{
-    opacity: 1;
-  }
-  
   .plat-type {
     display: flex;
     flex-direction: row;
+    .plat-box {
+      padding: 0px;
+      width: 30%;
+      height: 176px;
+      h3 {
+        height: 50px;
+        margin-left: 10px;
+      }
+      h4 {
+        max-width: 90%;
+        white-space: unset;
+      }
+      .plat-desc {
+        height: 96px;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+      .check-appear {
+        width: 100%;
+        margin-left: 0px;
+      }
+    }
 }
 h2.plat-type__title {
   width: 29px;
-}
-.plat-box {
-  padding: 0px;
-  width: 30%;
-  height: 176px;
-}
-.plat-box h3 {
-  height: 50px;
-  margin-left: 10px;
-}
-.plat-desc {
-  height: 96px;
-  flex-direction: column;
-  margin-left: 10px;
-}
-.plat-box h4 {
-  max-width: 90%;
-  white-space: unset;
-}
-.check-appear {
-  width: 100%;
-  margin-left: 0px;
 }
 .plat-box:hover {
   & .plat-desc{
@@ -74,6 +67,7 @@ h2.plat-type__title {
     margin-top: 0px;
     margin-left: 0px;
     width: 100%;
+    animation: check-appear 0.5s;
   }
   & .price{
     margin-right: 20%;
@@ -86,6 +80,24 @@ h2.plat-type__title {
   }
   & h4 {
     white-space: nowrap;
+  }
+}
+@keyframes check-appear {
+  from {
+    margin-top: 100px;
+  }
+  to {
+    margin-top: 0px;
+    
+  }
+}
+
+@keyframes move-price {
+  from {
+    margin-bottom: -30px;
+  }
+  to {
+    margin-bottom: 0px;
   }
 }
 }

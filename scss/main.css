@@ -56,6 +56,182 @@
   }
 }
 
+@-webkit-keyframes lds-ellipsis {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes lds-ellipsis {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+    margin-top: -300px;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    margin-top: -300px;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes check-appear {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: 92%;
+  }
+}
+
+@keyframes check-appear {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: 92%;
+  }
+}
+
+@-webkit-keyframes move-price {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 17%;
+  }
+}
+
+@keyframes move-price {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 17%;
+  }
+}
+
+@-webkit-keyframes check-rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+@keyframes check-rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
 h1 {
   font-size: 27px;
   font-weight: 500;
@@ -272,16 +448,22 @@ li {
   position: relative;
   height: 100px;
   margin-top: -100px;
-  margin-left: 90%;
+  margin-left: 92%;
   width: 100px;
+  -webkit-animation: check-appear 0.5s;
+          animation: check-appear 0.5s;
 }
 
 .plat-box:hover .price {
-  margin-right: 20%;
+  margin-right: 17%;
+  -webkit-animation: move-price 0.5s;
+          animation: move-price 0.5s;
 }
 
 .plat-box:hover .fa-check {
   margin: 55% 25px;
+  -webkit-animation: check-rotate 0.5s;
+          animation: check-rotate 0.5s;
 }
 
 .plat-box:hover h4 {
@@ -334,8 +516,8 @@ li {
 
 .displayed {
   opacity: 0;
-  -webkit-animation: displayed 0s 3s normal forwards;
-          animation: displayed 0s 3s normal forwards;
+  -webkit-animation: displayed 0s 2.9s normal forwards;
+          animation: displayed 0s 2.9s normal forwards;
 }
 
 html {
@@ -355,6 +537,54 @@ body {
           flex-direction: column;
 }
 
+.lds-ellipsis {
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin: 117px;
+  margin-left: 44%;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-animation: lds-ellipsis 1.5s  normal forwards;
+          animation: lds-ellipsis 1.5s  normal forwards;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fcf;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
+}
+
 .plat-box {
   padding: 0px 30px 0px 10px;
   margin: 15px;
@@ -362,6 +592,8 @@ body {
           box-shadow: 2px 2px 5px 2px #dddddd;
   background-color: white;
   border-radius: 15px;
+  -webkit-animation: apparition 2.5s;
+          animation: apparition 2.5s;
   overflow: hidden;
 }
 
@@ -694,12 +926,6 @@ span {
 }
 
 @media screen and (min-width: 845px) {
-  .progress {
-    opacity: 0;
-  }
-  .displayed {
-    opacity: 1;
-  }
   .plat-type {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -709,19 +935,20 @@ span {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  h2.plat-type__title {
-    width: 29px;
-  }
-  .plat-box {
+  .plat-type .plat-box {
     padding: 0px;
     width: 30%;
     height: 176px;
   }
-  .plat-box h3 {
+  .plat-type .plat-box h3 {
     height: 50px;
     margin-left: 10px;
   }
-  .plat-desc {
+  .plat-type .plat-box h4 {
+    max-width: 90%;
+    white-space: unset;
+  }
+  .plat-type .plat-box .plat-desc {
     height: 96px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -729,13 +956,12 @@ span {
             flex-direction: column;
     margin-left: 10px;
   }
-  .plat-box h4 {
-    max-width: 90%;
-    white-space: unset;
-  }
-  .check-appear {
+  .plat-type .plat-box .check-appear {
     width: 100%;
     margin-left: 0px;
+  }
+  h2.plat-type__title {
+    width: 29px;
   }
   .plat-box:hover .plat-desc {
     height: 56px;
@@ -744,6 +970,8 @@ span {
     margin-top: 0px;
     margin-left: 0px;
     width: 100%;
+    -webkit-animation: check-appear 0.5s;
+            animation: check-appear 0.5s;
   }
   .plat-box:hover .price {
     margin-right: 20%;
@@ -756,6 +984,38 @@ span {
   }
   .plat-box:hover h4 {
     white-space: nowrap;
+  }
+  @-webkit-keyframes check-appear {
+    from {
+      margin-top: 100px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }
+  @keyframes check-appear {
+    from {
+      margin-top: 100px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }
+  @-webkit-keyframes move-price {
+    from {
+      margin-bottom: -30px;
+    }
+    to {
+      margin-bottom: 0px;
+    }
+  }
+  @keyframes move-price {
+    from {
+      margin-bottom: -30px;
+    }
+    to {
+      margin-bottom: 0px;
+    }
   }
 }
 

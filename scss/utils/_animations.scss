@@ -13,3 +13,73 @@
         margin-top: 1%;
         opacity: 0; } 
   }
+  @keyframes lds-ellipsis{
+      0%{opacity: 1;}
+      99%{opacity: 1;}
+      100%{opacity: 0;
+    }
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+  @keyframes apparition {
+    0% {
+        opacity: 0;
+        margin-top: -300px;
+      }
+      65% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        margin-top: 0px;
+      }
+  }
+  @keyframes check-appear {
+    from {
+      margin-left: 110%;
+    }
+    to {
+      margin-left: 92%;
+    }
+  }
+  
+  @keyframes move-price {
+    from {
+      margin-right: 0%;
+    }
+    to {
+      margin-right: 17%;
+    }
+  }
+  
+  @keyframes check-rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(1440deg);
+    }
+  }

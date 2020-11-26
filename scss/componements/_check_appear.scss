@@ -8,14 +8,17 @@
     position: relative;
     height: 100px;
     margin-top: -100px;
-    margin-left: 90%;
+    margin-left: 92%;
     width: 100px;
+    animation: check-appear 0.5s;
   }
   & .price{
-    margin-right: 20%;
+    margin-right: 17%;
+    animation: move-price 0.5s;
   }
   & .fa-check{
       margin: 55% 25px;
+      animation: check-rotate 0.5s;
   }
   & h4{
     text-overflow: ellipsis;

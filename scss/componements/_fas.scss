@@ -36,6 +36,7 @@
     opacity: 0;
     font-size: 26px;
     -webkit-text-stroke: 1px white;
+    transition: 0.5s ease-out;
     background: linear-gradient(210deg, $primary-color, $primary-color, $primary-color, orange, orange) right;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

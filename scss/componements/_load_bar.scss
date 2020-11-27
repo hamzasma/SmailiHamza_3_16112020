@@ -11,9 +11,7 @@
     margin-top: 50%;
     margin-left: 5%;
     animation: invisible 1.5s 1.5s normal forwards;
-  }
-  
-  .progress-value {
+    .progress-value {
     animation: load 1.5s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 13px;
@@ -21,6 +19,9 @@
     height: 30px;
     width: 0;
   }
+  }
+  
+  
   .displayed{
       opacity: 0;
       animation: displayed 0s 2.9s normal forwards;

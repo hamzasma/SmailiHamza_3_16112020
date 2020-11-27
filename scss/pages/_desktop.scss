@@ -87,8 +87,7 @@ h2.plat-type__title {
     margin-top: 100px;
   }
   to {
-    margin-top: 0px;
-    
+    margin-top: 0px;    
   }
 }
 
@@ -115,6 +114,15 @@ h2.plat-type__title {
   }
   figure .fas.hidden {
     margin-left: 470px;
+  }
+  .progress {
+    margin-left: -40px;
+  }
+  @keyframes load {
+    0% { width: 0; }
+    99%{opacity: 1;}
+    100% { width:1280px; 
+    opacity: 0;}
   }
   
 }

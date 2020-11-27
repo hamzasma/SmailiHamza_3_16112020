@@ -56,6 +56,24 @@
   }
 }
 
+@-webkit-keyframes btn {
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ec87dd), to(#a16be0));
+    background: linear-gradient(#ec87dd, #a16be0);
+    -webkit-box-shadow: 2px 2px 5px 2px #8e8989;
+            box-shadow: 2px 2px 5px 2px #8e8989;
+  }
+}
+
+@keyframes btn {
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ec87dd), to(#a16be0));
+    background: linear-gradient(#ec87dd, #a16be0);
+    -webkit-box-shadow: 2px 2px 5px 2px #8e8989;
+            box-shadow: 2px 2px 5px 2px #8e8989;
+  }
+}
+
 @-webkit-keyframes lds-ellipsis {
   0% {
     opacity: 1;
@@ -351,8 +369,8 @@ header a {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ec87dd), to(#a16be0));
-  background: linear-gradient(#ec87dd, #a16be0);
+  -webkit-animation: btn 1s forwards;
+          animation: btn 1s forwards;
 }
 
 .btn {
@@ -416,6 +434,8 @@ header a {
   opacity: 0;
   font-size: 26px;
   -webkit-text-stroke: 1px white;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
   background: linear-gradient(210deg, #9356dc, #9356dc, #9356dc, orange, orange) right;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -502,7 +522,7 @@ li {
           animation: invisible 1.5s 1.5s normal forwards;
 }
 
-.progress-value {
+.progress .progress-value {
   -webkit-animation: load 1.5s normal forwards;
           animation: load 1.5s normal forwards;
   -webkit-box-shadow: 0 10px 40px -10px #fff;
@@ -694,9 +714,10 @@ figure .fas.hidden {
   opacity: 0;
   font-size: 26px;
   -webkit-text-stroke: 1px white;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
   background: linear-gradient(210deg, #9356dc, #9356dc, #9356dc, orange, orange) right;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 0%;
 }
@@ -1032,6 +1053,33 @@ span {
   }
   figure .fas.hidden {
     margin-left: 470px;
+  }
+  .progress {
+    margin-left: -40px;
+  }
+  @-webkit-keyframes load {
+    0% {
+      width: 0;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      width: 1280px;
+      opacity: 0;
+    }
+  }
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      width: 1280px;
+      opacity: 0;
+    }
   }
 }
 /*# sourceMappingURL=main.css.map */

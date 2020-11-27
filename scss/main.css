@@ -505,7 +505,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   padding: 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;

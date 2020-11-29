@@ -1053,7 +1053,7 @@ span {
     margin-left: 470px;
   }
   .progress {
-    margin-left: -40px;
+    width: 1280px;
   }
   @-webkit-keyframes load {
     0% {

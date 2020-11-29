@@ -1,7 +1,7 @@
   @keyframes load {
     0% { width: 0; }
     99%{opacity: 1;}
-    100% { width:100%; 
+    100% { width:90%; 
     opacity: 0;}
   }
   @keyframes displayed {
@@ -10,7 +10,7 @@
   @keyframes invisible {
     99%{opacity: 1;}
     100% { 
-        margin-top: 1%;
+        margin-top: 10px;
         opacity: 0; } 
   }
   @keyframes btn{

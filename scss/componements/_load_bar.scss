@@ -3,13 +3,11 @@
     border-radius: 100px;
     align-items: center;
     position: fixed;
-    padding: 0 5px;
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 90%;
+    width: 100%;
     margin-top: 50%;
-    margin-left: 5%;
     animation: invisible 1.5s 1.5s normal forwards;
     .progress-value {
     animation: load 1.5s normal forwards;

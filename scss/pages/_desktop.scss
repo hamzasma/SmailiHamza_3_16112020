@@ -118,6 +118,12 @@ h2.plat-type__title {
   figure .fas.hidden {
     margin-left: 470px;
   }
+  .fas-title .fas:not(.hidden) {
+    margin-left: 1176px;
+}
+.fas-title .fas.hidden {
+  margin-left: 1176px;
+}
   .progress {
     width: 1280px;
   }
